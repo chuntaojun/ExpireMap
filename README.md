@@ -20,9 +20,10 @@ Compared to the HashMap that comes with JDK8, the HashExpireMap data structure c
 
 #### Next optimization
 
--[ ] Add a permanent storage put method
--[ ] Use red and black trees instead of linked lists
--[ ] Optimize code structure
+- [ ] Add a permanent storage put method
+- [ ] Use red and black trees instead of linked lists
+- [ ] Optimize code structure
+
 
 
 > 中文
