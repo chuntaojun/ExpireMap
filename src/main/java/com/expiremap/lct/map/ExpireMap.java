@@ -1,4 +1,4 @@
-package com.hashexpiremap.lct;
+package com.expiremap.lct.map;
 
 import java.util.*;
 import java.util.concurrent.ScheduledExecutorService;
@@ -11,6 +11,7 @@ import static java.util.concurrent.Executors.newSingleThreadScheduledExecutor;
  *
  * @author tensor
  */
+@Deprecated
 public class ExpireMap<K, V, T extends Long> extends Observable {
 
     /**
@@ -173,10 +174,6 @@ public class ExpireMap<K, V, T extends Long> extends Observable {
             return false;
         }
         throw new RuntimeException("This function had coverd by ExpireMap.ExpireKeyScan");
-    }
-
-    public static long GET_DEFAULT_EXPIRE_TIME() {
-        return DEFAULT_EXPIRE_TIME;
     }
 
     private class ExpireKeyScan implements Runnable {

@@ -1,7 +1,8 @@
-package com.hashexpiremap.lct;
+package com.expiremap.lct.map;
 
-
-import com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
+import com.expiremap.lct.client.ExpireNotify;
+import com.expiremap.lct.exception.TimeSupportException;
+import com.expiremap.lct.client.ExpireTimeType;
 
 import java.util.*;
 import java.util.concurrent.ScheduledExecutorService;
@@ -17,84 +18,29 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
 
     ScheduledExecutorService service = newSingleThreadScheduledExecutor();
 
-    /**
-     * The default initial capacity - MUST be a power of two.
-     */
     static final int DEFAULT_INITIAL_CAPACITY = 1 << 4; // aka 16
 
-    /**
-     * The maximum capacity, used if a higher value is implicitly specified
-     * by either of the constructors with arguments.
-     * MUST be a power of two <= 1<<30.
-     */
     static final int MAXIMUM_CAPACITY = 1 << 30;
 
-    /**
-     * The load factor used when none specified in constructor.
-     */
     static final float DEFAULT_LOAD_FACTOR = 0.75f;
 
-    /**
-     * The bin count threshold for using a tree rather than list for a
-     * bin.  Bins are converted to trees when adding an element to a
-     * bin with at least this many nodes. The value must be greater
-     * than 2 and should be at least 8 to mesh with assumptions in
-     * tree removal about conversion back to plain bins upon
-     * shrinkage.
-     */
     static final int TREEIFY_THRESHOLD = 8;
 
-    /**
-     * The bin count threshold for untreeifying a (split) bin during a
-     * resize operation. Should be less than TREEIFY_THRESHOLD, and at
-     * most 6 to mesh with shrinkage detection under removal.
-     */
     static final int UNTREEIFY_THRESHOLD = 6;
 
-    /**
-     * The smallest table capacity for which bins may be treeified.
-     * (Otherwise the table is resized if too many nodes in a bin.)
-     * Should be at least 4 * TREEIFY_THRESHOLD to avoid conflicts
-     * between resizing and treeification thresholds.
-     */
     static final int MIN_TREEIFY_CAPACITY = 64;
 
-    /**
-     * The number of key-value mappings contained in this map.
-     */
     transient int size;
 
-    /**
-     * The number of times this HashMap has been structurally modified
-     * Structural modifications are those that change the number of mappings in
-     * the HashMap or otherwise modify its internal structure (e.g.,
-     * rehash).  This field is used to make iterators on Collection-views of
-     * the HashMap fail-fast.  (See ConcurrentModificationException).
-     */
     transient int modCount;
 
-    /**
-     * The next size value at which to resize (capacity * load factor).
-     *
-     * @serial
-     */
-    // (The javadoc description is true upon serialization.
-    // Additionally, if the table array has not been allocated, this
-    // field holds the initial array capacity, or zero signifying
-    // DEFAULT_INITIAL_CAPACITY.)
     int threshold;
 
-    /**
-     * The load factor for the hash table.
-     *
-     * @serial
-     */
     final float loadFactor;
 
     public HashExpireMap(long initialDelay,
                          long period,
                          TimeUnit timeUnit) {
-        addObserver(new ExpireNotify());
         service.scheduleAtFixedRate(new HashExpireMap.ScanThread(), initialDelay, period + 10,
                 timeUnit);
         // all other fields defaulted
@@ -206,20 +152,17 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
         return putVal(hash(key), key, value, (T) Long.valueOf(System.currentTimeMillis() + 6 * 60 * 1000), false, true);
     }
 
-    public V put(K key, V value, String time) {
-        if (time instanceof String) {
-            return putVal(hash(key), key, value, setExpireTime(time), false, true);
-        }
-        throw new ClassFormatException("The time must be java.lang.String");
+    public V put(K key, V value, long time, ExpireTimeType expireTimeType) {
+        return putVal(hash(key), key, value, setExpireTime(time, expireTimeType), false, true);
     }
 
     public Item get(Object key) {
-        HashExpireMap.Node<K,V,T> e;
+        HashExpireMap.Node<K, V, T> e;
         return (e = getNode(hash(key), key)) == null ? null : new Item(e.value, e.time);
     }
 
     public Item remove(Object key) {
-        HashExpireMap.Node<K,V, T> e;
+        HashExpireMap.Node<K, V, T> e;
         return (e = removeNode(hash(key), key, null, false, true)) == null ?
                 null : new Item(e.value, e.time);
     }
@@ -321,52 +264,62 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
         return null;
     }
 
-    public Set<HashExpireMap.Node<K,V,T>> entrySet() {
-        Set<HashExpireMap.Node<K,V,T>> es;
+    public Set<HashExpireMap.Node<K, V, T>> entrySet() {
+        Set<HashExpireMap.Node<K, V, T>> es;
         return (es = entrySet) == null ? (entrySet = new HashExpireMap.EntrySet()) : es;
     }
 
-    final class EntrySet extends AbstractSet<HashExpireMap.Node<K,V,T>> {
+    final class EntrySet extends AbstractSet<HashExpireMap.Node<K, V, T>> {
         @Override
-        public final int size()                 { return size; }
+        public final int size() {
+            return size;
+        }
+
         @Override
-        public final void clear()               { HashExpireMap.this.clear(); }
+        public final void clear() {
+            HashExpireMap.this.clear();
+        }
+
         @Override
-        public final Iterator<HashExpireMap.Node<K,V,T>> iterator() {
+        public final Iterator<HashExpireMap.Node<K, V, T>> iterator() {
             return new HashExpireMap.EntryIterator();
         }
+
         @Override
         public final boolean contains(Object o) {
             if (!(o instanceof Map.Entry))
                 return false;
-            Map.Entry<?,?> e = (Map.Entry<?,?>) o;
+            Map.Entry<?, ?> e = (Map.Entry<?, ?>) o;
             Object key = e.getKey();
-            HashExpireMap.Node<K,V,T> candidate = getNode(hash(key), key);
+            HashExpireMap.Node<K, V, T> candidate = getNode(hash(key), key);
             return candidate != null && candidate.equals(e);
         }
+
         @Override
         public final boolean remove(Object o) {
             if (o instanceof Map.Entry) {
-                Map.Entry<?,?> e = (Map.Entry<?,?>) o;
+                Map.Entry<?, ?> e = (Map.Entry<?, ?>) o;
                 Object key = e.getKey();
                 Object value = e.getValue();
                 return removeNode(hash(key), key, value, true, true) != null;
             }
             return false;
         }
+
         @Override
-        public final Spliterator<HashExpireMap.Node<K,V,T>> spliterator() {
+        public final Spliterator<HashExpireMap.Node<K, V, T>> spliterator() {
             return new HashExpireMap.EntrySpliterator(HashExpireMap.this, 0, -1, 0, 0);
         }
+
         @Override
-        public final void forEach(Consumer<? super HashExpireMap.Node<K,V,T>> action) {
-            HashExpireMap.Node<K,V,T>[] tab;
+        public final void forEach(Consumer<? super HashExpireMap.Node<K, V, T>> action) {
+            HashExpireMap.Node<K, V, T>[] tab;
             if (action == null)
                 throw new NullPointerException();
             if (size > 0 && (tab = table) != null) {
                 int mc = modCount;
                 for (int i = 0; i < tab.length; ++i) {
-                    for (HashExpireMap.Node<K,V, T> e = tab[i]; e != null; e = e.next)
+                    for (HashExpireMap.Node<K, V, T> e = tab[i]; e != null; e = e.next)
                         action.accept(e);
                 }
                 if (modCount != mc)
@@ -385,11 +338,12 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
                 threshold = Integer.MAX_VALUE;
                 return oldTab;
             } else if ((newCap = oldCap << 1) < MAXIMUM_CAPACITY &&
-                    oldCap >= DEFAULT_INITIAL_CAPACITY)
-                newThr = oldThr << 1; // double threshold
-        } else if (oldThr > 0) // initial capacity was placed in threshold
+                    oldCap >= DEFAULT_INITIAL_CAPACITY) {
+                newThr = oldThr << 1;
+            }
+        } else if (oldThr > 0) {
             newCap = oldThr;
-        else {               // zero initial threshold signifies using defaults
+        } else {
             newCap = DEFAULT_INITIAL_CAPACITY;
             newThr = (int) (DEFAULT_LOAD_FACTOR * DEFAULT_INITIAL_CAPACITY);
         }
@@ -407,9 +361,9 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
                 HashExpireMap.Node<K, V, T> e;
                 if ((e = oldTab[j]) != null) {
                     oldTab[j] = null;
-                    if (e.next == null)
+                    if (e.next == null) {
                         newTab[e.hash & (newCap - 1)] = e;
-                    else { // preserve order
+                    } else {
                         HashExpireMap.Node<K, V, T> loHead = null, loTail = null;
                         HashExpireMap.Node<K, V, T> hiHead = null, hiTail = null;
                         HashExpireMap.Node<K, V, T> next;
@@ -459,18 +413,19 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
     }
 
     abstract class HashIterator {
-        Node<K,V,T> next;        // next entry to return
-        Node<K,V,T> current;     // current entry
+        Node<K, V, T> next;        // next entry to return
+        Node<K, V, T> current;     // current entry
         int expectedModCount;  // for fast-fail
         int index;             // current slot
 
         HashIterator() {
             expectedModCount = modCount;
-            Node<K,V,T>[] t = table;
+            Node<K, V, T>[] t = table;
             current = next = null;
             index = 0;
             if (t != null && size > 0) { // advance to first entry
-                do {} while (index < t.length && (next = t[index++]) == null);
+                do {
+                } while (index < t.length && (next = t[index++]) == null);
             }
         }
 
@@ -478,21 +433,22 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
             return next != null;
         }
 
-        final Node<K,V,T> nextNode() {
-            Node<K,V,T>[] t;
-            Node<K,V,T> e = next;
+        final Node<K, V, T> nextNode() {
+            Node<K, V, T>[] t;
+            Node<K, V, T> e = next;
             if (modCount != expectedModCount)
                 throw new ConcurrentModificationException();
             if (e == null)
                 throw new NoSuchElementException();
             if ((next = (current = e).next) == null && (t = table) != null) {
-                do {} while (index < t.length && (next = t[index++]) == null);
+                do {
+                } while (index < t.length && (next = t[index++]) == null);
             }
             return e;
         }
 
         public final void remove() {
-            Node<K,V,T> p = current;
+            Node<K, V, T> p = current;
             if (p == null)
                 throw new IllegalStateException();
             if (modCount != expectedModCount)
@@ -505,20 +461,22 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
     }
 
     final class EntryIterator extends HashExpireMap.HashIterator
-            implements Iterator<HashExpireMap.Node<K,V,T>> {
+            implements Iterator<HashExpireMap.Node<K, V, T>> {
         @Override
-        public final HashExpireMap.Node<K,V,T> next() { return nextNode(); }
+        public final HashExpireMap.Node<K, V, T> next() {
+            return nextNode();
+        }
     }
 
-    static class ExpireTimeMapSpliterator<K,V,T> {
-        final HashExpireMap<K,V,Long> map;
-        Node<K,V,Long> current;          // current node
-        int index;                  // current index, modified on advance/split
-        int fence;                  // one past last index
-        int est;                    // size estimate
-        int expectedModCount;       // for comodification checks
+    static class ExpireTimeMapSpliterator<K, V, T> {
+        final HashExpireMap<K, V, Long> map;
+        Node<K, V, Long> current;
+        int index;
+        int fence;
+        int est;
+        int expectedModCount;
 
-        ExpireTimeMapSpliterator(HashExpireMap<K,V,Long> m, int origin,
+        ExpireTimeMapSpliterator(HashExpireMap<K, V, Long> m, int origin,
                                  int fence, int est,
                                  int expectedModCount) {
             this.map = m;
@@ -531,10 +489,10 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
         final int getFence() { // initialize fence and size on first use
             int hi;
             if ((hi = fence) < 0) {
-                HashExpireMap<K,V,Long> m = map;
+                HashExpireMap<K, V, Long> m = map;
                 est = m.size;
                 expectedModCount = m.modCount;
-                Node<K,V,Long>[] tab = m.table;
+                Node<K, V, Long>[] tab = m.table;
                 hi = fence = (tab == null) ? 0 : tab.length;
             }
             return hi;
@@ -546,16 +504,16 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
         }
     }
 
-    static final class EntrySpliterator<K,V,T extends Long>
-            extends ExpireTimeMapSpliterator<K,V,Long>
-            implements Spliterator<HashExpireMap.Node<K,V,Long>> {
-        EntrySpliterator(HashExpireMap<K,V, Long> m, int origin, int fence, int est,
+    static final class EntrySpliterator<K, V, T extends Long>
+            extends ExpireTimeMapSpliterator<K, V, Long>
+            implements Spliterator<HashExpireMap.Node<K, V, Long>> {
+        EntrySpliterator(HashExpireMap<K, V, Long> m, int origin, int fence, int est,
                          int expectedModCount) {
             super(m, origin, fence, est, expectedModCount);
         }
 
         @Override
-        public EntrySpliterator<K,V,T> trySplit() {
+        public EntrySpliterator<K, V, T> trySplit() {
             int hi = getFence(), lo = index, mid = (lo + hi) >>> 1;
             return (lo >= mid || current != null) ? null :
                     new EntrySpliterator<>(map, lo, index = mid, est >>>= 1,
@@ -563,21 +521,20 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
         }
 
         @Override
-        public void forEachRemaining(Consumer<? super HashExpireMap.Node<K,V,Long>> action) {
+        public void forEachRemaining(Consumer<? super HashExpireMap.Node<K, V, Long>> action) {
             int i, hi, mc;
             if (action == null)
                 throw new NullPointerException();
-            HashExpireMap<K,V,Long> m = map;
-            Node<K,V,Long>[] tab = m.table;
+            HashExpireMap<K, V, Long> m = map;
+            Node<K, V, Long>[] tab = m.table;
             if ((hi = fence) < 0) {
                 mc = expectedModCount = m.modCount;
                 hi = fence = (tab == null) ? 0 : tab.length;
-            }
-            else
+            } else
                 mc = expectedModCount;
             if (tab != null && tab.length >= hi &&
                     (i = index) >= 0 && (i < (index = hi) || current != null)) {
-                Node<K,V,Long> p = current;
+                Node<K, V, Long> p = current;
                 current = null;
                 do {
                     if (p == null)
@@ -593,17 +550,17 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
         }
 
         @Override
-        public boolean tryAdvance(Consumer<? super HashExpireMap.Node<K,V,Long>> action) {
+        public boolean tryAdvance(Consumer<? super HashExpireMap.Node<K, V, Long>> action) {
             int hi;
             if (action == null)
                 throw new NullPointerException();
-            Node<K,V,Long>[] tab = map.table;
+            Node<K, V, Long>[] tab = map.table;
             if (tab != null && tab.length >= (hi = getFence()) && index >= 0) {
                 while (current != null || index < hi) {
                     if (current == null)
                         current = tab[index++];
                     else {
-                        Node<K,V,Long> e = current;
+                        Node<K, V, Long> e = current;
                         current = current.next;
                         action.accept(e);
                         if (map.modCount != expectedModCount)
@@ -624,26 +581,26 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
 
     /**
      *
-     * @param strTime
+     * @param timeNumber
+     * @param expireTimeType
      * @return
      */
-    final T setExpireTime(String strTime) {
-        char timeType = strTime.charAt(strTime.length() - 1);
-        Long timeNumer = Long.valueOf(strTime.substring(0, strTime.length() - 1));
-        if (timeType == 's' || timeType == 'S') {
-            return (T) new Long(System.currentTimeMillis() + timeNumer * 1000);
-        } else if (timeType == 'm' || timeType == 'M') {
-            return (T) new Long(System.currentTimeMillis() + timeNumer * 60 * 1000);
-        } else if (timeType == 'h' || timeType == 'H') {
-            return (T) new Long(System.currentTimeMillis() * timeNumer * 60 * 60 * 1000);
+    @SuppressWarnings("unchecked")
+    private T setExpireTime(long timeNumber, ExpireTimeType expireTimeType) {
+        if (expireTimeType == ExpireTimeType.SECOND) {
+            return (T) new Long(System.currentTimeMillis() + timeNumber * 1000);
+        } else if (expireTimeType == ExpireTimeType.MINUTE) {
+            return (T) new Long(System.currentTimeMillis() + timeNumber * 60 * 1000);
+        } else if (expireTimeType == ExpireTimeType.HOUR) {
+            return (T) new Long(System.currentTimeMillis() * timeNumber * 60 * 60 * 1000);
         }
-        throw new RuntimeException("当前仅支持秒(s|S)、分(m|M)、时(h|H)");
+        throw new TimeSupportException("当前仅支持秒(s|S)、分(m|M)、时(h|H)");
     }
 
     class ScanThread implements Runnable {
 
         private boolean isExpire(K k, T t) {
-            if ((Long)t < System.currentTimeMillis()) {
+            if ((Long) t < System.currentTimeMillis()) {
                 setChanged();
                 notifyObservers(k);
                 return true;
@@ -654,13 +611,12 @@ public class HashExpireMap<K, V, T extends Long> extends Observable {
         @Override
         public void run() {
             for (Iterator<HashExpireMap.Node<K, V, T>> iterator = entrySet().iterator(); iterator.hasNext(); iterator.next()) {
-                HashExpireMap.Node<K,V,T> node = iterator.next();
+                HashExpireMap.Node<K, V, T> node = iterator.next();
                 if (isExpire(node.key, node.time)) {
                     iterator.remove();
                 }
             }
         }
-
     }
 
 }

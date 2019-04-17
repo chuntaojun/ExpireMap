@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct.iml" filepath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct.iml" filepath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct.iml" group="com.hashexpiremap.lct" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_main.iml" group="com.hashexpiremap.lct" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_test.iml" group="com.hashexpiremap.lct" />
     </modules>

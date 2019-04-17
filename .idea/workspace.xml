@@ -2,22 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76e052ec-1031-4333-aa6a-c877d306bdf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/liaochuntao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/expiremap/lct/client/ExpireTimeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/expiremap/lct/exception/TimeSupportException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/ConcurrentHashExpireMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/jarAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/com.hashexpiremap.lct_test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/com.hashexpiremap.lct-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/com.hashexpiremap.lct-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/com.hashexpiremap.lct-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/hashexpiremap/lct/ExpireMap$ExpireKeyScan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/hashexpiremap/lct/ExpireMap$ExpireKeyScan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/hashexpiremap/lct/ExpireMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/hashexpiremap/lct/ExpireMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ExecutorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ExecutorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/ExpireMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/ExpireMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/ExpireNotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/expiremap/lct/client/ExpireNotify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/HashExpireMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/HashExpireMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ExecutorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ExecutorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -42,6 +59,10 @@
     <expand />
     <select />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -54,398 +75,111 @@
       </state>
     </system>
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="763581128">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="328" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="328" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-23278445">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="gradle" value="1" />
-          <entry key="java" value="2" />
-          <entry key="md" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="2" />
-          <entry key="Markdown" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="4" />
-          <entry key="md" value="41" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="4" />
-          <entry key="Markdown" value="41" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/client/ExpireNotify.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/HashExpireMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/client/ExpireTimeType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/exception/TimeSupportException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/ExpireMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/ConcurrentHashExpireMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ExecutorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="501">
-                <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/ExpireMap.java">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="656">
-              <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>next</find>
+      <find>synchronized</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="myGradleHomes">
-      <map>
-        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2" />
-      </map>
-    </option>
-    <option name="myGradleVersions">
-      <map>
-        <entry key="$PROJECT_DIR$" value="4.10.2" />
-      </map>
-    </option>
-    <option name="availableProjects">
-      <map>
-        <entry>
-          <key>
-            <ExternalProjectPojo>
-              <option name="name" value="com.hashexpiremap.lct" />
-              <option name="path" value="$PROJECT_DIR$" />
-            </ExternalProjectPojo>
-          </key>
-          <value>
-            <list>
-              <ExternalProjectPojo>
-                <option name="name" value="com.hashexpiremap.lct" />
-                <option name="path" value="$PROJECT_DIR$" />
-              </ExternalProjectPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="availableTasks">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'com.hashexpiremap.lct'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'com.hashexpiremap.lct'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="classes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'com.hashexpiremap.lct'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'com.hashexpiremap.lct'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Gradle wrapper files." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="wrapper" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles test classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="testClasses" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Generates Javadoc API documentation for the main source code." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="javadoc" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a jar archive containing the main classes." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="jar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'com.hashexpiremap.lct'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes main resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'com.hashexpiremap.lct'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Initializes a new Gradle build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="init" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs the unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles main Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'com.hashexpiremap.lct'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles the outputs of this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Compiles test Java source." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="compileTestJava" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'com.hashexpiremap.lct'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Processes test resources." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="processTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'com.hashexpiremap.lct'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="modificationStamps">
-      <map>
-        <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="3264378997" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="1359066651" />
-      </map>
-    </option>
-    <option name="projectBuildClasspath">
-      <map>
-        <entry key="$PROJECT_DIR$">
-          <value>
-            <ExternalProjectBuildClasspathPojo>
-              <option name="modulesBuildClasspath">
-                <map>
-                  <entry key="$PROJECT_DIR$">
-                    <value>
-                      <ExternalModuleBuildClasspathPojo>
-                        <option name="path" value="$PROJECT_DIR$" />
-                      </ExternalModuleBuildClasspathPojo>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-              <option name="name" value="com.hashexpiremap.lct" />
-              <option name="projectBuildClasspath">
-                <list>
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-native-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-kotlin-dsl-1.0-rc-6.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-wrapper-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-docs-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-jvm-services-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-process-services-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/ant-1.9.11.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/groovy-all-2.4.15.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-build-cache-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-cli-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/ant-launcher-1.9.11.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-api-metadata-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-persistent-cache-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-kotlin-dsl-provider-plugins-1.0-rc-6.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-kotlin-dsl-tooling-models-1.0-rc-6.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-model-groovy-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-launcher-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-kotlin-dsl-tooling-builders-1.0-rc-6.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-runtime-api-info-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-base-services-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-resources-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-build-option-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-logging-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-core-api-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-tooling-api-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-core-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-messaging-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-installation-beacon-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-base-services-groovy-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/gradle-model-core-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-tooling-native-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-ide-play-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-plugins-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-platform-native-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-reporting-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-tooling-api-builders-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-testing-native-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-testing-jvm-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-ide-native-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-scala-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-ide-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-platform-play-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-language-scala-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-osgi-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-composite-builds-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-plugin-development-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-language-jvm-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-javascript-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-dependency-management-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-platform-jvm-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-test-kit-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-plugin-use-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-publish-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-build-init-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-resources-gcs-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-resources-http-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-language-native-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-resources-sftp-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-jacoco-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-testing-junit-platform-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-build-comparison-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-resources-s3-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-maven-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-platform-base-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-testing-base-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-build-cache-http-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-diagnostics-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-antlr-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-workers-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-ear-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-signing-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-language-groovy-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-version-control-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-ivy-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/ivy-2.2.0.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-code-quality-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-language-java-4.10.2.jar" />
-                  <option value="$USER_HOME$/.sdkman/candidates/gradle/4.10.2/lib/plugins/gradle-announce-4.10.2.jar" />
-                </list>
-              </option>
-            </ExternalProjectBuildClasspathPojo>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -461,14 +195,20 @@
         <option value="$PROJECT_DIR$/src/main/src/com/hashexpiremap/lct/AbstractExpireNotify.java" />
         <option value="$PROJECT_DIR$/src/main/src/com/hashexpiremap/lct/ExpireNotify.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/ExpireMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/TimeSupportException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/HashExpireMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/ExpireTimeType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/ConcurrentHashExpireMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/expiremap/lct/HashExpireMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/expiremap/lct/client/ExpireNotify.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/expiremap/lct/client/ExpireTimeType.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ExecutorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/HashExpireMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/ConcurrentHashExpireMap.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -476,11 +216,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="43" />
     <option name="y" value="23" />
-    <option name="width" value="1877" />
-    <option name="height" value="1057" />
+    <option name="width" value="2005" />
+    <option name="height" value="1129" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -490,55 +230,96 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="ExpireMap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="ExpireMap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ExpireMap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="ExpireMap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="ExpireMap" type="b2602c69:ProjectViewProjectNode" />
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lct" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lct" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lct" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lct" type="462c0819:PsiDirectoryNode" />
+              <item name="map" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="com.hashexpiremap.lct" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExpireMap" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539510708365" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543848779033" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
@@ -555,7 +336,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ExecutorTest.test">
     <configuration name="Executor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.executor.org.Executor" />
       <module name="main" />
@@ -563,8 +344,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExecutorTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.hashexpiremap.lct_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ExecutorTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Executor" />
+      <item itemvalue="JUnit.ExecutorTest.test" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExecutorTest.test" />
         <item itemvalue="Application.Executor" />
       </list>
     </recent_temporary>
@@ -584,12 +380,27 @@
       <workItem from="1539508008955" duration="231000" />
       <workItem from="1539508347682" duration="1026000" />
       <workItem from="1539510558960" duration="154000" />
-      <workItem from="1539510744694" duration="175000" />
+      <workItem from="1539510744694" duration="1096000" />
+      <workItem from="1539512535500" duration="4902000" />
+      <workItem from="1539525027763" duration="284000" />
+      <workItem from="1539927203642" duration="597000" />
+      <workItem from="1540007464081" duration="18000" />
+      <workItem from="1540103423596" duration="1040000" />
+      <workItem from="1540390342084" duration="4000" />
+      <workItem from="1543831476036" duration="2604000" />
+      <workItem from="1543916406495" duration="9000" />
+      <workItem from="1550460341760" duration="10000" />
+      <workItem from="1555512018821" duration="147000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ExecutorTest_test - 2018.10.14 at 19h 50m 48s.xml">
+      <configuration name="ExecutorTest.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7420000" />
+    <option name="totallyTimeSpent" value="17956000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -601,25 +412,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="23" width="1877" height="1057" extended-state="0" />
+    <frame x="42" y="23" width="1878" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1438692" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15958606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="SonarQube" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41523606" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41450778" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32953367" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32953367" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="JProfiler" order="11" />
@@ -627,7 +440,8 @@
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="14" />
       <window_info anchor="bottom" id="Messages" order="15" />
-      <window_info anchor="bottom" id="Build" order="16" visible="true" weight="0.32953367" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.32953367" />
+      <window_info anchor="right" id="Codota" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24959128" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -638,13 +452,12 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Gradle" order="9" />
+      <window_info anchor="right" id="BPMNPalette" order="10" />
+      <window_info anchor="right" id="Maven" order="11" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -668,23 +481,10 @@
     <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.181-oracle/src.zip!/java/util/Observable.java" />
     <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.181-oracle/src.zip!/java/util/concurrent/TimeUnit.java" />
     <entry file="file://$PROJECT_DIR$/src/main/src/com/hashexpiremap/lct/ExpireNotifyService.java" />
-    <entry file="file://$PROJECT_DIR$/../spring-demo/Thread/src/main/java/com/hashexpiremap/lct/ExpireNotify.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../spring-demo/Thread/src/main/java/com/hashexpiremap/lct/ExpireNotify.java" />
     <entry file="file://$PROJECT_DIR$/src/main/src/com/hashexpiremap/lct/Executor.java" />
     <entry file="file://$PROJECT_DIR$/src/main/src/com/hashexpiremap/lct/ExpireMap.java" />
     <entry file="file://$PROJECT_DIR$/src/main/src/com/hashexpiremap/lct/ExpireNotify.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hashexpiremap/lct/ExpireMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -692,13 +492,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/HashMap.java" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="501">
-            <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="128">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/lang/SuppressWarnings.java" />
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/util/concurrent/ConcurrentHashMap.java" />
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/8.0.191-oracle/src.zip!/java/io/ObjectStreamField.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/client/ExpireNotify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/HashExpireMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/client/ExpireTimeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/exception/TimeSupportException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/ExpireMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/expiremap/lct/map/ConcurrentHashExpireMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -754,7 +628,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ExpireMap</last-edited>
+          <last-edited>com.hashexpiremap.lct_main|com.hashexpiremap.lct</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -767,6 +641,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Gradle: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

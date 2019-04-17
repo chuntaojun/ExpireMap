@@ -23,8 +23,7 @@ Compared to the HashMap that comes with JDK8, the HashExpireMap data structure c
 - [ ] Add a permanent storage put method
 - [ ] Use red and black trees instead of linked lists
 - [ ] Optimize code structure
-
-
+- [ ] Adapt to high concurrency issues
 
 > 中文
 
