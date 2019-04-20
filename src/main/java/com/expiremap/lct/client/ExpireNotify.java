@@ -4,6 +4,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
+ * 集成这个抽象类即可获取过期通知时间信息
  * @author tensor
  */
 public abstract class ExpireNotify implements Observer {

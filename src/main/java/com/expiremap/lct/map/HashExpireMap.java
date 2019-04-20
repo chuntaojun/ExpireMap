@@ -1,6 +1,5 @@
 package com.expiremap.lct.map;
 
-import com.expiremap.lct.client.ExpireNotify;
 import com.expiremap.lct.exception.TimeSupportException;
 import com.expiremap.lct.client.ExpireTimeType;
 
@@ -12,6 +11,7 @@ import java.util.function.Consumer;
 import static java.util.concurrent.Executors.newSingleThreadScheduledExecutor;
 
 /**
+ * 非线程安全的HashMap
  * @author liaochuntao
  */
 public class HashExpireMap<K, V, T extends Long> extends Observable {
